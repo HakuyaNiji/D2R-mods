@@ -1,0 +1,48 @@
+{
+  "name": "CharacterNecromancerSkillAdjustment",
+  "description": "死灵法师技能调整",
+  "author": "HakuyaNiji",
+  "version": "1.2",
+  "config": [
+    {
+      "id": "necSumResMax",
+      "type": "number",
+      "name": "Summon Resist Max %",
+      "description": "Default: 75",
+      "defaultValue": 75,
+      "minValue": 0
+    },
+    {
+      "id": "necskeletonhitbox",
+      "type": "checkbox",
+      "name": "骷髅战士无碰撞体积",
+      "defaultValue": false
+    },
+    {
+      "id": "necmagehitbox",
+      "type": "checkbox",
+      "name": "骷髅法师无碰撞体积",
+      "defaultValue": false
+    },
+    {
+      "id": "necgolemshitbox",
+      "type": "checkbox",
+      "name": "魔像无碰撞体积",
+      "defaultValue": false
+    },
+    {
+      "id": "necBoneSpearToTeeth",
+      "type": "checkbox",
+      "name": "骨矛多重牙",
+      "defaultValue": false
+    },
+    {
+      "id": "necLowerResist",
+      "type": "number",
+      "name": "诅咒-降低抵抗最大值",
+      "description": "Default: 70",
+      "defaultValue": 70,
+      "minValue": 0
+    }
+  ]
+}

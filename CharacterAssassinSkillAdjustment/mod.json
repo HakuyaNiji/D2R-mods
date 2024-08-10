@@ -1,0 +1,110 @@
+{
+  "name": "CharacterAssassinAdjustment",
+  "description": "刺客技能调整",
+  "author": "HakuyaNiji",
+  "version": "1.1",
+  "config": [
+    {
+      "id": "assClawMax",
+      "type": "number",
+      "name": "Claw Mastery Critical Max %",
+      "description": "Default: 25",
+      "defaultValue": 25,
+      "minValue": 25
+    },
+    {
+      "id": "assBlockMax",
+      "type": "number",
+      "name": "Weapon Block Max %",
+      "description": "Default: 65",
+      "defaultValue": 65,
+      "minValue": 65
+    },
+    {
+      "id": "assShadowWarriorPetmax",
+      "type": "number",
+      "name": "影子刺客数量上限",
+      "description": "Default: 1",
+      "defaultValue": 1
+    },
+    {
+      "id": "assShadowMasterPetmax",
+      "type": "number",
+      "name": "影子大师数量上限",
+      "description": "Default: 1",
+      "defaultValue": 1
+    },
+    {
+      "id": "assFadeAndQuickness",
+      "type": "checkbox",
+      "name": "加速和能量消解共存",
+      "defaultValue": true
+    },
+    {
+      "id": "assSentryPetMax",
+      "type": "number",
+      "name": "五种陷阱最大放置数",
+      "description": "Default: 5",
+      "defaultValue": 5
+    },
+    {
+      "id": "assSentryNoInsight",
+      "type": "checkbox",
+      "name": "五种陷阱可隔墙放置",
+      "defaultValue": true
+    },
+    {
+      "id": "assQuicknessVelocityMax",
+      "type": "number",
+      "name": "加速技能最大跑步速度",
+      "description": "Default: 70",
+      "defaultValue": 70
+    },
+    {
+      "id": "assQuicknessAttackSpeedMax",
+      "type": "number",
+      "name": "加速技能最大攻速",
+      "description": "Default: 60",
+      "defaultValue": 60
+    },
+    {
+      "id": "assFadeElementalResistanceMax",
+      "type": "number",
+      "name": "能量消解技能最大元素抗性",
+      "description": "Default: 75",
+      "defaultValue": 75
+    },
+    {
+      "id": "assFadeQuicknessTime",
+      "type": "number",
+      "name": "加速和能量消解每级时间",
+      "description": "Default: 300",
+      "defaultValue": 300,
+      "minValue": 300
+    },
+    {
+      "id": "assGas",
+      "type": "number",
+      "name": "聚气时长",
+      "description": "Default: 375",
+      "defaultValue": 375,
+      "minValue": 25
+    },
+    {
+      "id": "assBladesOfIceDamageRange",
+      "type": "number",
+      "name": "寒冰刃冻伤范围",
+      "description": "Default: 6",
+      "defaultValue": 6,
+      "minValue": 1
+    },
+    {
+      "id": "assBladesOfIceFreezeRange",
+      "type": "number",
+      "name": "寒冰刃冻结范围",
+      "description": "Default: 3",
+      "defaultValue": 3,
+      "minValue": 1
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "name": "CharacterSorcererAdjustment",
+  "description": "法师技能调整",
+  "author": "HakuyaNiji",
+  "version": "1.1",
+  "config": [
+    {
+      "id": "sorStaticField",
+      "type": "checkbox",
+      "name": "静态立场超视距施法",
+      "defaultValue": true
+    },
+    {
+      "id": "sorFireWall",
+      "type": "checkbox",
+      "name": "火墙超视距施法",
+      "defaultValue": true
+    },
+    {
+      "id": "sorMeteor",
+      "type": "checkbox",
+      "name": "陨石超视距施法",
+      "defaultValue": true
+    },
+    {
+      "id": "sorBlizzard",
+      "type": "checkbox",
+      "name": "暴风雪超视距施法",
+      "defaultValue": true
+    },
+    {
+      "id": "sorHydra",
+      "type": "checkbox",
+      "name": "九头蛇超视距施法",
+      "defaultValue": true
+    },
+    {
+      "id": "sorGlacialSpikeRadius",
+      "type": "number",
+      "name": "冰尖柱爆炸范围",
+      "description": "Default: 4",
+      "defaultValue": 4,
+      "minValue": 1
+    },
+    {
+      "id": "sorChainLightningTargets",
+      "type": "number",
+      "name": "连锁闪电目标数每X级+1",
+      "description": "Default: 5",
+      "defaultValue": 5,
+      "minValue": 1
+    },
+    {
+      "id": "sorArmorStack",
+      "type": "checkbox",
+      "name": "法师三种冰甲共存",
+      "defaultValue": true
+    },
+    {
+      "id": "sorColdMastery",
+      "type": "number",
+      "name": "冰冷支配每级提升",
+      "description": "Default: 5",
+      "defaultValue": 5,
+      "minValue": 0
+    },
+    {
+      "id": "sorColdMasteryPowerUp",
+      "type": "checkbox",
+      "name": "冰冷支配同时减火电魔抗",
+      "defaultValue": true
+    },
+    {
+      "id": "sorFireAndLightningMasteryAlsoCold",
+      "type": "checkbox",
+      "name": "火电支配同时加冰伤",
+      "defaultValue": true
+    }
+  ]
+}

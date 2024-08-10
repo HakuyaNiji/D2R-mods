@@ -1,0 +1,88 @@
+{
+  "name": "CharacterDruidSkillAdjustment",
+  "description": "德鲁伊技能调整",
+  "author": "HakuyaNiji",
+  "version": "1.2",
+  "config": [
+    {
+      "id": "allspirits",
+      "type": "checkbox",
+      "name": "全灵魂",
+      "description": "Enable summon one of every spirit. The party only allow 9 members types including mercenary. If you wanna play as summoner, remember that all summons + mercenary = 11 party slots. Exced the limit will despawn vines first.",
+      "defaultValue": true
+    },
+    {
+      "id": "allvines",
+      "type": "checkbox",
+      "name": "全藤蔓",
+      "description": "Enable summon one of every vine. The party only allow 9 members types including mercenary. If you wanna play as summoner, remember that all summons + mercenary = 11 party slots. Exced the limit will despawn vines first.",
+      "defaultValue": true
+    },
+    {
+      "id": "spiritwolfpetmaxparam",
+      "type": "number",
+      "name": "幽灵狼召唤上限",
+      "description": "Default: 5",
+      "defaultValue": 5
+    },
+    {
+      "id": "spiritwolfHitbox",
+      "type": "checkbox",
+      "name": "灵狼碰撞体积为零",
+      "defaultValue": false
+    },
+    {
+      "id": "fenrispetmaxparam",
+      "type": "number",
+      "name": "狂狼召唤上限",
+      "description": "Default: 3",
+      "defaultValue": 3
+    },
+    {
+      "id": "fenrisHitbox",
+      "type": "checkbox",
+      "name": "狂狼碰撞体积为零",
+      "defaultValue": false
+    },
+    {
+      "id": "grizzlypetmaxparam",
+      "type": "number",
+      "name": "熊召唤上限",
+      "description": "Default: 1",
+      "defaultValue": 1
+    },
+    {
+      "id": "druidbearHitbox",
+      "type": "checkbox",
+      "name": "熊碰撞体积为零",
+      "defaultValue": false
+    },
+    {
+      "id": "fireclawbugcorrect",
+      "type": "checkbox",
+      "name": "焰爪bug伤害修复",
+      "defaultValue": true
+    },
+    {
+      "id": "druArmageddonDuration",
+      "type": "number",
+      "name": "毁天灭地时长",
+      "description": "Default: 250",
+      "defaultValue": 250
+    },
+    {
+      "id": "druHurricaneDuration",
+      "type": "number",
+      "name": "飓风时长",
+      "description": "Default: 250",
+      "defaultValue": 250
+    },
+    {
+      "id": "druHurricaneRange",
+      "type": "number",
+      "name": "飓风半径",
+      "description": "Default: 9",
+      "defaultValue": 9
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "name": "CharacterBarbarianSkillAdjustment",
+  "description": "野蛮人技能调整",
+  "author": "HakuyaNiji",
+  "version": "1.1",
+  "config": [
+    {
+      "id": "barPassiveCriticalChanceMax",
+      "type": "number",
+      "name": "武器精通最大被动暴击率",
+      "description": "Default: 35",
+      "defaultValue": 35,
+      "minValue": 0
+    },
+    {
+      "id": "barThroPierMax",
+      "type": "number",
+      "name": "投掷精通被动最大穿刺率",
+      "description": "Default: 55",
+      "defaultValue": 55,
+      "minValue": 0
+    },
+    {
+      "id": "barThroNoMax",
+      "type": "number",
+      "name": "投掷精通被动最大不消耗武器率",
+      "description": "Default: 66",
+      "defaultValue": 66,
+      "minValue": 0
+    },
+    {
+      "id": "barResistMax",
+      "type": "number",
+      "name": "Natural Resistance Max %",
+      "description": "Default: 80",
+      "defaultValue": 80,
+      "minValue": 0
+    },
+    {
+      "id": "barFrenzyTime",
+      "type": "number",
+      "name": "野蛮人狂乱基础持续时间/秒",
+      "description": "Default: 6",
+      "defaultValue": 6
+    }
+  ]
+}
