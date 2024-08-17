@@ -2,7 +2,7 @@
   "name": "CharacterBarbarianSkillAdjustment",
   "description": "野蛮人技能调整",
   "author": "HakuyaNiji",
-  "version": "1.1",
+  "version": "1.4",
   "config": [
     {
       "id": "barPassiveCriticalChanceMax",
@@ -42,6 +42,20 @@
       "name": "野蛮人狂乱基础持续时间/秒",
       "description": "Default: 6",
       "defaultValue": 6
+    },
+    {
+      "id": "barBattleCryRange",
+      "type": "number",
+      "name": "野蛮人战嗥半径",
+      "description": "Default: 12",
+      "defaultValue": 12
+    },
+    {
+      "id": "barWarCryRange",
+      "type": "number",
+      "name": "野蛮人战争狂嗥半径",
+      "description": "Default: 16",
+      "defaultValue": 16
     }
   ]
 }

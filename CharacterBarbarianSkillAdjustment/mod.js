@@ -1,6 +1,12 @@
 const skillsFilename = 'global\\excel\\skills.txt';
 const skills = D2RMM.readTsv(skillsFilename);
 
+const skillsdescFileName = 'global\\excel\\skilldesc.txt';
+const skillsdesc = D2RMM.readTsv(skillsdescFileName);
+
+const missilesdescFileName = 'global\\excel\\missiles.txt';
+const missilesdesc = D2RMM.readTsv(missilesdescFileName);
+
 // skills.txt
 skills.rows.forEach((row) => {
 // Barbarian
@@ -56,7 +62,37 @@ skills.rows.forEach((row) => {
 	}
 	// Frenzy Time
 	if (row.skilldesc === 'frenzy') {
-		row.Param7 = config.frenzy * 25;
+		row.Param7 = config.barFrenzyTime * 25;
 	}
 });
 D2RMM.writeTsv(skillsFilename, skills);
+
+// missiles.txt
+missilesdesc.rows.forEach((row) => {
+	// Battle Cry
+	if (row.Missile == 'battlecry') {
+		row.Vel = config.barBattleCryRange * 3
+		row.MaxVel = config.barBattleCryRange * 3
+		row.Range = config.barBattleCryRange
+	}
+	// War Cry
+	if (row.Missile == 'warcry') {
+		row.Vel = config.barWarCryRange * 3
+		row.MaxVel = config.barWarCryRange * 3
+		row.Range = config.barWarCryRange
+	}
+});
+D2RMM.writeTsv(missilesdescFileName, missilesdesc);
+
+// skilldesc.txt
+skillsdesc.rows.forEach((row) => {
+	// Battle Cry
+	if (row.skilldesc == 'battle cry') {
+		row.desccalca4 = config.barBattleCryRange
+	}
+	// War Cry
+	if (row.skilldesc == 'war cry') {
+		row.desccalca4 = config.barWarCryRange
+	}
+});
+D2RMM.writeTsv(skillsdescFileName, skillsdesc);
