@@ -64,6 +64,17 @@ skills.rows.forEach((row) => {
 	if (row.skilldesc === 'frenzy') {
 		row.Param7 = config.barFrenzyTime * 25;
 	}
+	// Leap
+	if (row.skilldesc === 'leap') {
+		row.Param1 = config.barLeapMinRange;
+		row.Param5 = config.barLeapMinFrame;
+		row.Param7 = config.barLeapSpeed;
+	}
+	// Leap Attack
+	if (row.skilldesc === 'leap attack') {
+		row.Param5 = config.barLeapAttackMinFrame;
+		row.Param7 = config.barLeapAttackSpeed;
+	}
 });
 D2RMM.writeTsv(skillsFilename, skills);
 
