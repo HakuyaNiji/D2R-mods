@@ -1,6 +1,55 @@
 {
-  "name": "Cube K6 Keys",
-  "description": "耐力药水转K6钥匙",
+  "name": "Cube K6 Keys and Essences",
+  "description": "1耐力药水转K6key\n2-3耐力药水转精华\n4-5耐力药水转3BBkey\n珠宝+碎裂骷髅=红白珠\n珠宝+碎裂钻石=15攻速15全抗\n珠宝+碎裂红宝石=安脸珠\n手工项链+指定符文重roll施法系手工项链",
   "author": "HakuyaNiji",
-  "version": "1.1"
+  "version": "1.6.1",
+  "config": [
+    {
+      "id": "CraftIngredient",
+      "type": "select",
+      "name": "施法系手工项链重roll素材",
+      "defaultValue": "r24",
+      "options": [
+        { "value": "r09", "label": "Ort Rune (9)" },
+        { "value": "r10", "label": "Thul Rune (10)" },
+        { "value": "r11", "label": "Amn Rune (11)" },
+        { "value": "r12", "label": "Sol Rune (12)" },
+        { "value": "r13", "label": "Shael Rune (13)" },
+        { "value": "r14", "label": "Dol Rune (14)" },
+        { "value": "r15", "label": "Hel Rune (15)" },
+        { "value": "r16", "label": "Io Rune (16)" },
+        { "value": "r17", "label": "Lum Rune (17)" },
+        { "value": "r18", "label": "Ko Rune (18)" },
+        { "value": "r19", "label": "Fal Rune (19)" },
+        { "value": "r20", "label": "Lem Rune (20)" },
+        { "value": "r21", "label": "Pul Rune (21)" },
+        { "value": "r22", "label": "Um Rune (22)" },
+        { "value": "r23", "label": "Mal Rune (23)" },
+        { "value": "r24", "label": "Ist Rune (24)" },
+        { "value": "r25", "label": "Gul Rune (25)" },
+        { "value": "r26", "label": "Vex Rune (26)" },
+        { "value": "r27", "label": "Ohm Rune (27)" },
+        { "value": "r28", "label": "Lo Rune (28)" },
+        { "value": "r29", "label": "Sur Rune (29)" },
+        { "value": "r30", "label": "Ber Rune (30)" },
+        { "value": "r31", "label": "Jah Rune (31)" },
+        { "value": "r32", "label": "Cham Rune (32)" },
+        { "value": "r33", "label": "Zod Rune (33)" }
+      ]
+    },
+    {
+      "id": "BugJewl",
+      "type": "checkbox",
+      "name": "启用不正常珠宝",
+      "description": "钻石+珠宝=45全抗7fhr30减魔抗",
+      "default": false
+    },
+    {
+      "id": "RemoveRubbishPrefixSuffix",
+      "type": "checkbox",
+      "name": "移除垃圾词缀（测试）",
+      "description": "8号+素材+手工=术士施法手工",
+      "default": false
+    }
+  ]
 }
