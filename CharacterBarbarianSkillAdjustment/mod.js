@@ -66,14 +66,23 @@ skills.rows.forEach((row) => {
 	}
 	// Leap
 	if (row.skilldesc === 'leap') {
-		row.Param1 = config.barLeapMinRange;
-		row.Param5 = config.barLeapMinFrame;
-		row.Param7 = config.barLeapSpeed;
+		row.Param1 = config.barLeapMinRange
+		row.Param5 = config.barLeapMinFrame
+		row.Param7 = config.barLeapSpeed
+		if (config.barLeapSight) {
+			row.LineOfSight = ''
+		}
 	}
 	// Leap Attack
 	if (row.skilldesc === 'leap attack') {
-		row.Param5 = config.barLeapAttackMinFrame;
-		row.Param7 = config.barLeapAttackSpeed;
+		row.Param5 = config.barLeapAttackMinFrame
+		row.Param7 = config.barLeapAttackSpeed
+		if (config.barLeapSight) {
+			row.LineOfSight = ''
+		}
+		if (config.barLeapAttackNoTarget) {
+			row.TargetableOnly = ''
+		}
 	}
 });
 D2RMM.writeTsv(skillsFilename, skills);
@@ -91,6 +100,12 @@ missilesdesc.rows.forEach((row) => {
 		row.Vel = config.barWarCryRange * 3
 		row.MaxVel = config.barWarCryRange * 3
 		row.Range = config.barWarCryRange
+	}
+	// Leap Attack
+	if (row.Missile == 'leapattack') {
+		row.Vel = config.barLeapAttackRange * 3
+		row.MaxVel = config.barLeapAttackRange * 3
+		row.Range = config.barLeapAttackRange
 	}
 });
 D2RMM.writeTsv(missilesdescFileName, missilesdesc);

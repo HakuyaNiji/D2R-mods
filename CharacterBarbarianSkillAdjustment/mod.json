@@ -2,7 +2,7 @@
   "name": "CharacterBarbarianSkillAdjustment",
   "description": "野蛮人技能调整",
   "author": "HakuyaNiji",
-  "version": "1.5",
+  "version": "1.7.0",
   "config": [
     {
       "id": "barPassiveCriticalChanceMax",
@@ -58,6 +58,12 @@
       "defaultValue": 16
     },
     {
+      "id": "barLeapSight",
+      "type": "checkbox",
+      "name": "野蛮人跳跃和跳劈无需视野",
+      "defaultValue": true
+    },
+    {
       "id": "barLeapSpeed",
       "type": "number",
       "name": "野蛮人跳跃速度",
@@ -89,6 +95,19 @@
       "id": "barLeapAttackMinFrame",
       "type": "number",
       "name": "野蛮人跳劈空中最小帧",
+      "description": "Default: 12",
+      "defaultValue": 12
+    },
+    {
+      "id": "barLeapAttackNoTarget",
+      "type": "checkbox",
+      "name": "野蛮人跳劈无需目标",
+      "defaultValue": true
+    },
+    {
+      "id": "barLeapAttackRange",
+      "type": "number",
+      "name": "野蛮人跳劈半径",
       "description": "Default: 12",
       "defaultValue": 12
     }
