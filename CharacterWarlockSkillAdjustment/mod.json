@@ -1,0 +1,114 @@
+{
+  "name": "CharacterWarlockSkillAdjustment",
+  "description": "术士技能调整",
+  "author": "HakuyaNiji",
+  "version": "1.5.0",
+  "config": [
+    {
+      "id": "FlameWaveDelay",
+      "type": "number",
+      "name": "烈焰波施法延迟",
+      "description": "Default：17",
+      "defaultValue": 17
+    },
+    {
+      "id": "FlameWaveWidth",
+      "type": "number",
+      "name": "烈焰波最大宽度",
+      "description": "Default: 7",
+      "defaultValue": 7
+    },
+    {
+      "id": "ApocalypseFirePierceMax",
+      "type": "number",
+      "name": "末日最大减火炕",
+      "description": "Default: -40",
+      "defaultValue": -40
+    },
+    {
+      "id": "Apocalypselos",
+      "type": "checkbox",
+      "name": "末日超视距施法",
+      "defaultValue": false
+    },
+    {
+      "id": "ApocalypseFCR",
+      "type": "checkbox",
+      "name": "末日高速施法（测试）",
+      "defaultValue": false
+    },
+    {
+      "id": "EnhancedEntropyMiasmaRadius",
+      "type": "checkbox",
+      "name": "强化之熵瘴气半径计算调整为：2+技能等级/4",
+      "defaultValue": false
+    },
+    {
+      "id": "EnhancedEntropyMiasmaRange",
+      "type": "checkbox",
+      "name": "强化之熵瘴气持续时间移除上限",
+      "defaultValue": false
+    },
+    {
+      "id": "EnhancedEntropyAbyssRadius",
+      "type": "checkbox",
+      "name": "强化之熵深渊半径加成移除上限",
+      "defaultValue": false
+    },
+    {
+      "id": "Abysslos",
+      "type": "checkbox",
+      "name": "深渊超视距施法",
+      "defaultValue": false
+    },
+    {
+      "id": "LevitationMasteryCrit",
+      "type": "number",
+      "name": "悬浮精通最大暴击",
+      "description": "Default: 35",
+      "defaultValue": 35
+    },
+    {
+      "id": "CleaveAttackSpeed",
+      "type": "number",
+      "name": "劈斩最大攻速",
+      "description": "Default: 30",
+      "defaultValue": 30
+    },
+    {
+      "id": "MirroredBladesAttackSpeed",
+      "type": "number",
+      "name": "镜影锋刃最大攻速",
+      "description": "Default: 30",
+      "defaultValue": 30
+    },
+    {
+      "id": "PetAttackSpeedSection",
+      "type": "section",
+      "name": "恶魔攻速",
+      "defaultExpanded": false,
+      "children": [
+        {
+          "id": "DemonicMasteryAttackSpeed",
+          "type": "checkbox",
+          "name": "恶魔精通攻速移除上限",
+          "defaultValue": false
+        },
+        {
+          "id": "GoatmanAttackSpeed",
+          "type": "checkbox",
+          "name": "羊头人自带攻速移除上限",
+          "description": "需要先启用恶魔精通攻速移除上限才会生效，单开无效果",
+          "defaultValue": false
+        },
+        {
+          "id": "TaintedAttackSpeed",
+          "type": "checkbox",
+          "name": "污染魔自带攻速移除上限",
+          "description": "需要先启用恶魔精通攻速移除上限才会生效，单开无效果",
+          "defaultValue": false
+        }
+      ]
+    }
+  ]
+}
