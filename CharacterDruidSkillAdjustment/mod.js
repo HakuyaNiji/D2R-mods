@@ -22,6 +22,9 @@ const skills = D2RMM.readTsv(skillsFilename);
 const monstats2Filename = 'global\\excel\\monstats2.txt';
 const monstats2 = D2RMM.readTsv(monstats2Filename);
 
+const missilesFilename = 'global\\excel\\missiles.txt';
+const missiles = D2RMM.readTsv(missilesFilename);
+
 // pettype.txt
 // All spirits
 if (config.allspirits) {
@@ -148,23 +151,85 @@ skills.rows.forEach((row) => {
 		row.petmax = 'min(lvl,par3)'
 		row.Param3 = config.grizzlypetmaxparam
 	}
+	// Raven
+	if (row.skill == 'Raven') {
+		row.Param2 = config.druRavenPetmax
+		if (config.infiniteRaven) {
+			row.calc3 = "65535";
+			row.Param5 = "";
+			row.Param6 = "";
+		}
+	}
+	// Wearwolf
+	if (row.skill == 'Wearwolf') {
+		row.Param4 = config.druWearwolfIAS
+	}
+	// Feral Rage
+	if (row.skill == 'Feral Rage') {
+		row.Param1 = config.druFeralRageDruation
+		row.Param4 = config.druFeralRageRunSpeed
+	}
+	// Maul
+	if (row.skill == 'Maul') {
+		row.Param4 = config.druMaulDruation
+	}
 	// Fire Claws bug correction
 	if (config.fireclawbugcorrect) {
 		if (row.skill == 'Fire Claws') {
 			row.EDmgSymPerCalc = "min((skill('Firestorm'.lvl)+skill('Volcano'.lvl)), 120)*par8"
 		}
 	}
+	// Firestorm
+	if (row.skill == 'Firestorm') {
+		row.Param1 = config.druFirestormNum
+	}
 	// Armageddon
 	if (row.skill == 'Armageddon') {
 		row.Param1 = config.druArmageddonDuration
+	}
+	// Twister
+	if (row.skill == 'Twister') {
+		row.Param1 = config.druTwisterNum
+	}
+	// Tornado
+	if (row.skill == 'Tornado') {
+		row.Param1 = config.druTornadoRate
+		row.Param2 = config.druTornadoRange
 	}
 	// Hurricane
 	if (row.skill == 'Hurricane') {
 		row.Param1 = config.druHurricaneDuration
 		row.Param3 = config.druHurricaneRange
+		row.Param4 = config.druHurricaneDmgRate
 	}
 });
 D2RMM.writeTsv(skillsFilename, skills);
+
+
+// missiles.txt
+missiles.rows.forEach((row) => {
+	// Rabies
+	if (row.Missile == 'rabiesplague') {
+		row.Param2 = config.druRabiesRadius
+	}
+	// Firestorm
+	if (row.Missile == 'firestormmaker') {
+		row.Vel = config.druFirestormVel
+		row.MaxVel = config.druFirestormVel
+	}
+	// Twister
+	if (row.Missile == 'twister') {
+		row.Vel = config.druTwisterVel
+		row.MaxVel = config.druTwisterVel
+	}
+	// Tornado
+	if (row.Missile == 'tornado') {
+		row.Vel = config.druTornadoVel
+		row.MaxVel = config.druTornadoVel
+	}
+});
+D2RMM.writeTsv(missilesFilename, missiles);
+
 
 // monstat2.txt
 monstats2.rows.forEach(row => {

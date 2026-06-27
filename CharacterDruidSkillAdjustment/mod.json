@@ -2,7 +2,7 @@
   "name": "CharacterDruidSkillAdjustment",
   "description": "德鲁伊技能调整",
   "author": "HakuyaNiji",
-  "version": "1.2",
+  "version": "1.4.0",
   "config": [
     {
       "id": "allspirits",
@@ -58,10 +58,72 @@
       "defaultValue": false
     },
     {
+      "id": "infiniteRaven",
+      "type": "checkbox",
+      "name": "乌鸦永久存在",
+      "defaultValue": true
+    },
+    {
+      "id": "druRavenPetmax",
+      "type": "number",
+      "name": "乌鸦召唤上限",
+      "description": "Default: 5",
+      "defaultValue": 5
+    },
+    {
+      "id": "druWearwolfIAS",
+      "type": "number",
+      "name": "变狼攻速上限",
+      "description": "Default: 80",
+      "defaultValue": 80
+    },
+    {
+      "id": "druFeralRageDruation",
+      "type": "number",
+      "name": "野性狂暴持续时间",
+      "description": "Default: 500",
+      "defaultValue": 500
+    },
+    {
+      "id": "druFeralRageRunSpeed",
+      "type": "number",
+      "name": "野性狂暴高跑",
+      "description": "Default: 70",
+      "defaultValue": 70
+    },
+    {
+      "id": "druRabiesRadius",
+      "type": "number",
+      "name": "狂犬毒伤半径",
+      "description": "Default: 7",
+      "defaultValue": 7
+    },
+    {
+      "id": "druMaulDruation",
+      "type": "number",
+      "name": "猛槌持续时间",
+      "description": "Default: 500",
+      "defaultValue": 500
+    },
+    {
       "id": "fireclawbugcorrect",
       "type": "checkbox",
       "name": "焰爪bug伤害修复",
       "defaultValue": true
+    },
+    {
+      "id": "druFirestormNum",
+      "type": "number",
+      "name": "火焰风暴弹道数",
+      "description": "Default: 3",
+      "defaultValue": 3
+    },
+    {
+      "id": "druFirestormVel",
+      "type": "number",
+      "name": "火焰风暴子弹速度",
+      "description": "Default: 8",
+      "defaultValue": 8
     },
     {
       "id": "druArmageddonDuration",
@@ -69,6 +131,41 @@
       "name": "毁天灭地时长",
       "description": "Default: 250",
       "defaultValue": 250
+    },
+    {
+      "id": "druTwisterNum",
+      "type": "number",
+      "name": "小旋风弹道数",
+      "description": "Default: 3",
+      "defaultValue": 3
+    },
+    {
+      "id": "druTwisterVel",
+      "type": "number",
+      "name": "小旋风子弹速度",
+      "description": "Default: 10",
+      "defaultValue": 10
+    },
+    {
+      "id": "druTornadoRate",
+      "type": "number",
+      "name": "龙卷风出伤间隔（越短越快）",
+      "description": "Default: 15",
+      "defaultValue": 15
+    },
+    {
+      "id": "druTornadoRange",
+      "type": "number",
+      "name": "龙卷风半径",
+      "description": "Default: 3",
+      "defaultValue": 3
+    },
+    {
+      "id": "druTornadoVel",
+      "type": "number",
+      "name": "龙卷风子弹速度",
+      "description": "Default: 8",
+      "defaultValue": 8
     },
     {
       "id": "druHurricaneDuration",
@@ -83,6 +180,13 @@
       "name": "飓风半径",
       "description": "Default: 9",
       "defaultValue": 9
+    },
+    {
+      "id": "druHurricaneDmgRate",
+      "type": "number",
+      "name": "飓风出伤间隔（越短越快）",
+      "description": "Default: 20",
+      "defaultValue": 20
     }
   ]
 }
